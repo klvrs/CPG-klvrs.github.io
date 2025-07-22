@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Pathways Guide | Class 10 Onwards</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+      padding: 30px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      font-size: 2.2em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #576574;
+      margin-bottom: 30px;
+    }
+
+    #career-tree {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      margin: 10px 0;
+      position: relative;
+      padding-left: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    li:hover {
+      color: #2980b9;
+    }
+
+    li::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    li.open::before {
+      content: "▼";
+      color: #2980b9;
+    }
+
+    li > ul {
+      display: none;
+      margin-left: 20px;
+      padding: 10px;
+      border-left: 2px solid #3498db;
+      background: rgba(52, 152, 219, 0.05);
+    }
+
+    li.open > ul {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    /* Main categories */
+    #career-tree > li {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #2c3e50;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+
+    /* Sub categories */
+    #career-tree > li > ul > li {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #34495e;
+    }
+
+    /* Course listings */
+    #career-tree > li > ul > li > ul > li {
+      font-size: 1em;
+      font-weight: normal;
+      color: #576574;
+    }
+
+    /* Course details */
+    #career-tree li:last-child {
+      border-bottom: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Path indicators */
+    .path-indicator {
+      display: inline-block;
+      background: #e1f0ff;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 0.8em;
+      color: #3498db;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 15px; }
+      #career-tree { padding: 15px; }
+      h1 { font-size: 1.8em; }
+      #career-tree > li { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Career Pathways Guide</h1>
+  <div class="subtitle">Class 10 onwards</div>
+
+  <ul id="career-tree">
+    <li>After 10th
+      <ul>
+        <li>Intermediate (11 & 12)
+          <ul>
+            <li>MPC
+              <ul>
+                <li>After Intermediate
+                  <ul>
+                    <li>B.Tech / B.E.
+                      <ul>
+                        <li>Computer Science & Engineering</li>
+                        <li>Information Technology</li>
+                        <li>Electronics & Communication Engineering</li>
+                        <li>Electrical & Electronics Engineering</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Civil Engineering</li>
+                        <li>Chemical Engineering</li>
+                        <li>Biotechnology Engineering</li>
+                        <li>Aeronautical Engineering</li>
+                        <li>Agricultural Engineering</li>
+                        <li>Petroleum Engineering</li>
+                        <li>Mining Engineering</li>
+                      </ul>
+                    </li>
+                    <li>B.Sc
+                      <ul>
+                        <li>Mathematics</li>
+                        <li>Physics</li>
+                        <li>Statistics</li>
+                        <li>Computer Science</li>
+                        <li>Electronics</li>
+                      </ul>
+                    </li>
+                    <li>BCA</li>
+                    <li>Integrated MSc</li>
+                    <li>Defence (NDA, Navy, Airforce technical entries)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>BiPC
+              <ul>
+                <li>After Intermediate
+                  <ul>
+                    <li>MBBS</li>
+                    <li>BDS</li>
+                    <li>BAMS (Ayurveda)</li>
+                    <li>BHMS (Homeopathy)</li>
+                    <li>BUMS (Unani)</li>
+                    <li>BPT (Physiotherapy)</li>
+                    <li>B.Sc Nursing</li>
+                    <li>B.Pharmacy / Pharm.D</li>
+                    <li>B.Sc Life Sciences
+                      <ul>
+                        <li>Biotechnology</li>
+                        <li>Microbiology</li>
+                        <li>Genetics</li>
+                        <li>Biochemistry</li>
+                        <li>Nutrition & Dietetics</li>
+                      </ul>
+                    </li>
+                    <li>B.V.Sc (Veterinary Science)</li>
+                    <li>B.Sc Agriculture</li>
+                    <li>B.Sc Horticulture</li>
+                    <li>B.Sc Forestry</li>
+                    <li>B.Sc Fisheries</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>MEC
+              <ul>
+                <li>After Intermediate
+                  <ul>
+                    <li>B.Com
+                      <ul>
+                        <li>General</li>
+                        <li>Computers</li>
+                        <li>Honours</li>
+                      </ul>
+                    </li>
+                    <li>BBA / BBM</li>
+                    <li>CA / CS / CMA foundation courses</li>
+                    <li>BA Economics</li>
+                    <li>Integrated MBA (5 years)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>CEC
+              <ul>
+                <li>After Intermediate
+                  <ul>
+                    <li>BA
+                      <ul>
+                        <li>History</li>
+                        <li>Political Science</li>
+                        <li>Sociology</li>
+                        <li>Psychology</li>
+                        <li>Public Administration</li>
+                      </ul>
+                    </li>
+                    <li>Law (Integrated BA LLB, BBA LLB, B.Com LLB)</li>
+                    <li>Social Work (BSW)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>HEC
+              <ul>
+                <li>After Intermediate
+                  <ul>
+                    <li>BA (Languages, Literature, History, Economics, Civics)</li>
+                    <li>BFA (Fine Arts)</li>
+                    <li>B.Design (Fashion Design, Interior Design, Animation)</li>
+                    <li>Mass Communication & Journalism</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Vocational
+              <ul>
+                <li>After Intermediate
+                  <ul>
+                    <li>Polytechnic Diplomas</li>
+                    <li>Skill Development & ITI courses</li>
+                    <li>Direct jobs or certifications</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>Polytechnic Diploma (direct after 10th)
+          <ul>
+            <li>Engineering Diplomas ➔ Lateral Entry B.Tech / Jobs</li>
+            <li>Non-Engineering Diplomas ➔ Fashion Design, Hotel Management, Interior Design</li>
+          </ul>
+        </li>
+
+        <li>ITI Courses
+          <ul>
+            <li>Technical Trades ➔ Electrician, Fitter, Mechanic ➔ Jobs / Apprenticeships</li>
+            <li>Non-Technical Trades ➔ Stenography, Data Entry, Fashion Technology</li>
+          </ul>
+        </li>
+
+        <li>Paramedical Diplomas ➔ DMLT, Radiology, X-ray Tech, Dental Mechanics</li>
+        <li>Skill & Certificate Courses ➔ Animation, Web Design, Aviation, Event Management</li>
+        <li>Apprenticeships & Direct Jobs ➔ Railways, Defence trades, Police constable, private sector</li>
+        <li>Open Schooling & Skill Development ➔ NIOS, PMKVY, NSDC programs</li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    const items = document.querySelectorAll("#career-tree li");
+    items.forEach(item => {
+      item.addEventListener("click", function(e){
+        e.stopPropagation();
+        this.classList.toggle("open");
+      });
+    });
+
+    // Add path indicators to important nodes
+    document.querySelectorAll('#career-tree > li > ul > li').forEach(item => {
+      const pathIndicator = document.createElement('span');
+      pathIndicator.className = 'path-indicator';
+      pathIndicator.textContent = '➜ Click to explore';
+      item.insertBefore(pathIndicator, item.firstChild.nextSibling);
+    });
+  </script>
+
+</body>
+</html>
